@@ -85,7 +85,7 @@ def plot_benchmark_returns(benchmark_data, etf_data, title):
     layout = go.Layout(
         title=title,
         xaxis={'title': 'Date'},
-        yaxis={'title': 'Cumulative Returns', 'range': [-1, 3]})
+        yaxis={'title': 'Cumulative Returns', 'range': [-1, 2]})
 
     fig = go.Figure(data=[index_trace, etf_trace], layout=layout)
     offline_py.iplot(fig, config=config)
